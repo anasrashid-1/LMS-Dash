@@ -16,7 +16,7 @@ import {
   
   const LeftNav = () => {
     return (
-      <Box p={"2"}>
+      <Box p={"2"} >
         {/* Profile Card */}
         <Flex
           direction={"column"}

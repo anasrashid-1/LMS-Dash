@@ -54,7 +54,7 @@ const Main = () => {
               borderColor="gray.300"
               _hover={{ borderColor: "teal.500" }}
             >
-              <Link as={RouterLink} to="/teacher/home">
+              <Link as={RouterLink} to="/student/home">
                 <Flex
                   flexDirection={"column"}
                   justifyContent={"center"}
@@ -87,7 +87,7 @@ const Main = () => {
               borderColor="gray.300"
               _hover={{ borderColor: "teal.500" }}
             >
-              <Link as={RouterLink} to="/student/home">
+              <Link as={RouterLink} to="/teacher/home">
                 <Flex
                   flexDirection={"column"}
                   justifyContent={"center"}

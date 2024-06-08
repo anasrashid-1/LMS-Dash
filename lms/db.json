@@ -7,7 +7,12 @@
       "description": "Learn the basics of software development including programming, algorithms, and data structures.",
       "teacherId": 1,
       "teacherName": "Dr. John Doe",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "Introduction to Programming", "duration": "1 hour" },
+        { "id": 2, "title": "Understanding Algorithms", "duration": "2 hours" },
+        { "id": 3, "title": "Data Structures Overview", "duration": "1.5 hours" }
+      ]
     },
     {
       "id": 2,
@@ -16,7 +21,12 @@
       "description": "Explore advanced concepts in software engineering, project management, and software lifecycle.",
       "teacherId": 2,
       "teacherName": "Dr. Jane Smith",
-      "type": "Live"
+      "type": "Live",
+      "lessons": [
+        { "id": 1, "title": "Agile Methodology", "duration": "2.5 hours" },
+        { "id": 2, "title": "Software Architecture Patterns", "duration": "3 hours" },
+        { "id": 3, "title": "Continuous Integration and Deployment", "duration": "2 hours" }
+      ]
     },
     {
       "id": 3,
@@ -25,7 +35,12 @@
       "description": "Understand the fundamental data structures and algorithms for efficient problem-solving.",
       "teacherId": 1,
       "teacherName": "Dr. John Doe",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "Linked Lists", "duration": "2 hours" },
+        { "id": 2, "title": "Trees and Graphs", "duration": "3 hours" },
+        { "id": 3, "title": "Sorting and Searching Algorithms", "duration": "2.5 hours" }
+      ]
     },
     {
       "id": 4,
@@ -34,7 +49,12 @@
       "description": "Learn about database models, SQL, and how to manage and interact with databases.",
       "teacherId": 2,
       "teacherName": "Dr. Jane Smith",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "Introduction to Databases", "duration": "1.5 hours" },
+        { "id": 2, "title": "Relational Database Management Systems", "duration": "2 hours" },
+        { "id": 3, "title": "Database Design Principles", "duration": "2.5 hours" }
+      ]
     },
     {
       "id": 5,
@@ -43,7 +63,12 @@
       "description": "Get started with web development including HTML, CSS, and JavaScript.",
       "teacherId": 1,
       "teacherName": "Dr. John Doe",
-      "type": "Live"
+      "type": "Live",
+      "lessons": [
+        { "id": 1, "title": "Introduction to HTML", "duration": "1.5 hours" },
+        { "id": 2, "title": "Styling with CSS", "duration": "2 hours" },
+        { "id": 3, "title": "JavaScript Fundamentals", "duration": "2.5 hours" }
+      ]
     },
     {
       "id": 6,
@@ -52,7 +77,12 @@
       "description": "Dive into the principles of object-oriented programming and design patterns.",
       "teacherId": 2,
       "teacherName": "Dr. Jane Smith",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "Understanding Classes and Objects", "duration": "2 hours" },
+        { "id": 2, "title": "Inheritance and Polymorphism", "duration": "3 hours" },
+        { "id": 3, "title": "Design Patterns Overview", "duration": "2 hours" }
+      ]
     },
     {
       "id": 7,
@@ -61,7 +91,12 @@
       "description": "Learn about different testing methodologies and how to ensure software quality.",
       "teacherId": 1,
       "teacherName": "Dr. John Doe",
-      "type": "Live"
+      "type": "Live",
+      "lessons": [
+        { "id": 1, "title": "Software Testing Fundamentals", "duration": "1.5 hours" },
+        { "id": 2, "title": "Test Planning and Execution", "duration": "2.5 hours" },
+        { "id": 3, "title": "Test Automation", "duration": "2 hours" }
+      ]
     },
     {
       "id": 8,
@@ -70,7 +105,12 @@
       "description": "Develop mobile applications for Android and iOS platforms.",
       "teacherId": 2,
       "teacherName": "Dr. Jane Smith",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "App Development Fundamentals", "duration": "1.5 hours" },
+        { "id": 2, "title": "Planning and Execution", "duration": "2.5 hours" },
+        { "id": 3, "title": "Deployment", "duration": "2 hours" }
+      ]
     },
     {
       "id": 9,

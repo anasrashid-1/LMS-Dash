@@ -1,4 +1,5 @@
-import { Box, Text, Flex, Image, Button } from "@chakra-ui/react";
+import { Box, Text, Flex, Image, Button, Link } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import { FaUserGraduate, FaBook, FaUserClock } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -111,6 +112,7 @@ const HomeContent = () => {
             <Flex justifyContent="center" flexWrap="wrap" mt={5}>
                 {courses.map(course => (
                     <Box key={course.id} p="20px" bg="gray.100" borderRadius="12px" m="10px" flex="1" minWidth="300px"   _hover={{ bg: "green.200", cursor: "pointer" }} >
+                         <Link as={RouterLink} to={`course/${course.id}`} _hover={{}}>
                         <Flex flexDirection="column" height="100%">
                             <Image src={course.img} borderRadius="12px" mb="10px" />
                             <Text fontSize="xl" mb="10px">{course.name}</Text>
@@ -122,6 +124,7 @@ const HomeContent = () => {
                                 <Button colorScheme="teal" mt="auto" isDisabled>Upcoming</Button>
                             )}
                         </Flex>
+                        </Link>
                     </Box>
                 ))}
             </Flex>

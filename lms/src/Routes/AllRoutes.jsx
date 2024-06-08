@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route} from "react-router-dom";
 import Main from '../pages/Main';
 import StudentHome from '../pages/Student/StudentHome';
+import CourseDescription from '../Components/StudentComponents/CourseDescription';
 
 const AllRoutes = () => {
   return (
