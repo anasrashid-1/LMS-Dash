@@ -68,6 +68,7 @@ const Main = () => {
                     alt="Teacher" 
                     w={["52%", "60%"]} 
                   />
+                  
                 </Flex>
               </Link>
             </Box>

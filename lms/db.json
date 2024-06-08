@@ -1,0 +1,115 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Introduction to Software Development",
+      "img": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Learn the basics of software development including programming, algorithms, and data structures.",
+      "teacherId": 1,
+      "teacherName": "Dr. John Doe",
+      "type": "Upcoming"
+    },
+    {
+      "id": 2,
+      "name": "Advanced Software Engineering",
+      "img": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Explore advanced concepts in software engineering, project management, and software lifecycle.",
+      "teacherId": 2,
+      "teacherName": "Dr. Jane Smith",
+      "type": "Live"
+    },
+    {
+      "id": 3,
+      "name": "Data Structures and Algorithms",
+      "img": "https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Understand the fundamental data structures and algorithms for efficient problem-solving.",
+      "teacherId": 1,
+      "teacherName": "Dr. John Doe",
+      "type": "Upcoming"
+    },
+    {
+      "id": 4,
+      "name": "Database Management Systems",
+      "img": "https://images.pexels.com/photos/3862599/pexels-photo-3862599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Learn about database models, SQL, and how to manage and interact with databases.",
+      "teacherId": 2,
+      "teacherName": "Dr. Jane Smith",
+      "type": "Upcoming"
+    },
+    {
+      "id": 5,
+      "name": "Web Development Basics",
+      "img": "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Get started with web development including HTML, CSS, and JavaScript.",
+      "teacherId": 1,
+      "teacherName": "Dr. John Doe",
+      "type": "Live"
+    },
+    {
+      "id": 6,
+      "name": "Object-Oriented Programming",
+      "img": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Dive into the principles of object-oriented programming and design patterns.",
+      "teacherId": 2,
+      "teacherName": "Dr. Jane Smith",
+      "type": "Upcoming"
+    },
+    {
+      "id": 7,
+      "name": "Software Testing and Quality Assurance",
+      "img": "https://images.pexels.com/photos/546295/pexels-photo-546295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Learn about different testing methodologies and how to ensure software quality.",
+      "teacherId": 1,
+      "teacherName": "Dr. John Doe",
+      "type": "Live"
+    },
+    {
+      "id": 8,
+      "name": "Mobile App Development",
+      "img": "https://images.pexels.com/photos/5380792/pexels-photo-5380792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Develop mobile applications for Android and iOS platforms.",
+      "teacherId": 2,
+      "teacherName": "Dr. Jane Smith",
+      "type": "Upcoming"
+    },
+    {
+      "id": 9,
+      "name": "Cloud Computing",
+      "img": "https://images.pexels.com/photos/3862599/pexels-photo-3862599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "Understand the basics of cloud computing and how to work with cloud services.",
+      "teacherId": 1,
+      "teacherName": "Dr. John Doe",
+      "type": "Upcoming"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "age": 21,
+      "email": "alice.smith@example.com",
+      "coursesEnrolled": [1]
+    },
+    {
+      "id": 2,
+      "name": "Bob Johnson",
+      "age": 22,
+      "email": "bob.johnson@example.com",
+      "coursesEnrolled": [1, 2]
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dr. John Doe",
+      "subject": "Software Development",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Jane Smith",
+      "subject": "Software Engineering",
+      "email": "jane.smith@example.com"
+    }
+  ]
+}
