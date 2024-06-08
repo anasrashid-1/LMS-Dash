@@ -4,12 +4,12 @@ import Dashboard from "../../Components/Dashboard";
 import LeftNav from "../../Components/StudentComponents/LeftNav";
 import HomeContent from "../../Components/StudentComponents/HomeContent";
 import TopNav from "../../Components/StudentComponents/TopNav";
-import { useLocation } from "react-router-dom";
+import {useParams  } from "react-router-dom";
 import CourseDescription from "../../Components/StudentComponents/CourseDescription";
 
 const StudentHome = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
+
+  const { id } = useParams();
   return (
     <Box>
       {/* Nav for small Screens */}
@@ -29,7 +29,15 @@ const StudentHome = () => {
 
         {/* for main content */}
         <GridItem colSpan={[5, 4]} bg="gray.200" overflowY={"auto"}>
-          <HomeContent />
+        {(() => {
+            switch (id ? "/student/course/:id" : "") {
+              case "/student/course/:id":
+                return <CourseDescription courseId={id} />;
+              default:
+                return <HomeContent />;
+            }
+          })()}
+          {/* <HomeContent /> */}
         </GridItem>
       </Grid>
     </Box>

@@ -112,7 +112,8 @@ const HomeContent = () => {
             <Flex justifyContent="center" flexWrap="wrap" mt={5}>
                 {courses.map(course => (
                     <Box key={course.id} p="20px" bg="gray.100" borderRadius="12px" m="10px" flex="1" minWidth="300px"   _hover={{ bg: "green.200", cursor: "pointer" }} >
-                         <Link as={RouterLink} to={`course/${course.id}`} _hover={{}}>
+                         <Link as={RouterLink} to={`/student/course/${course.id}`} _hover={{}}>
+                         {console.log(course.id)}
                         <Flex flexDirection="column" height="100%">
                             <Image src={course.img} borderRadius="12px" mb="10px" />
                             <Text fontSize="xl" mb="10px">{course.name}</Text>
