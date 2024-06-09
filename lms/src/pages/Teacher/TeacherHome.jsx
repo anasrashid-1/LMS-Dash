@@ -3,6 +3,7 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 import {useLocation } from "react-router-dom";
 import LeftNav from "../../Components/TeacherComponents/LeftNav";
 import Courses from "../../Components/TeacherComponents/Courses";
+import TopNav from "../../Components/TeacherComponents/TopNav";
 
 const TeacherHome = () => {
     const location = useLocation();
@@ -11,7 +12,7 @@ const TeacherHome = () => {
     <Box>
       {/* Nav for small Screens */}
       <Box display={["block", "none"]}>
-        {/* <TopNav /> */}
+       <TopNav/>
       </Box>
       <Grid height={"100vh"} templateColumns="repeat(5, 1fr)">
         {/* for left navigation */}
