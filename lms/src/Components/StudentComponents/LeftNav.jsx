@@ -45,17 +45,24 @@ import {
         
          
         >
-          <Link as={RouterLink} to="/teacher/" _hover={{ textDecoration: "none", color: "teal" }}>
+          <Link as={RouterLink} to="/student/home" _hover={{ textDecoration: "none", color: "teal" }}>
             <HStack spacing={'4'} alignItems={"center"}>
               <Icon as={FaHome} boxSize={6} />
               <Text>Dashboard</Text>
             </HStack>
           </Link>
   
-          <Link as={RouterLink} to="/teacher/" _hover={{ textDecoration: "none", color: "teal" }}>
+          <Link as={RouterLink} to="/student/home" _hover={{ textDecoration: "none", color: "teal" }}>
             <HStack spacing={'4'} alignItems={"center"}>
               <Icon as={FaGraduationCap} boxSize={6} />
               <Text>All Courses</Text>
+            </HStack>
+          </Link>
+
+          <Link as={RouterLink} to="/student/courses/enrolled" _hover={{ textDecoration: "none", color: "teal" }}>
+            <HStack spacing={'4'} alignItems={"center"}>
+              <Icon as={FaChalkboardTeacher} boxSize={6} />
+              <Text>Enrolled Courses</Text>
             </HStack>
           </Link>
   
@@ -66,12 +73,7 @@ import {
             </HStack>
           </Link>
   
-          <Link as={RouterLink} to="/courses/enrolled" _hover={{ textDecoration: "none", color: "teal" }}>
-            <HStack spacing={'4'} alignItems={"center"}>
-              <Icon as={FaChalkboardTeacher} boxSize={6} />
-              <Text>Enrolled Courses</Text>
-            </HStack>
-          </Link>
+          
   
           <Link href="#" _hover={{ textDecoration: "none", color: "teal" }}>
             <HStack spacing={'4'} alignItems={"center"}>

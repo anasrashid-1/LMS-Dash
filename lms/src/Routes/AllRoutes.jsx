@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route} from "react-router-dom";
 import Main from '../pages/Main';
 import StudentHome from '../pages/Student/StudentHome';
-import CourseDescription from '../Components/StudentComponents/CourseDescription';
+
 
 const AllRoutes = () => {
   return (
@@ -11,6 +11,9 @@ const AllRoutes = () => {
         <Route path="/" element={<Main/>} />
         <Route path="/student/home" element={<StudentHome/>} />
         <Route path="/student/course/:id" element={<StudentHome/>} />
+        <Route path="/student/courses/enrolled" element={<StudentHome/>} />
+        <Route path="/student/coursecontent/:id" element={<StudentHome/>} />
+        
       </Routes>
     </div>
   )

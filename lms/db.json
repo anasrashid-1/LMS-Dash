@@ -119,7 +119,12 @@
       "description": "Understand the basics of cloud computing and how to work with cloud services.",
       "teacherId": 1,
       "teacherName": "Dr. John Doe",
-      "type": "Upcoming"
+      "type": "Upcoming",
+      "lessons": [
+        { "id": 1, "title": "App Development Fundamentals", "duration": "1.5 hours" },
+        { "id": 2, "title": "Planning and Execution", "duration": "2.5 hours" },
+        { "id": 3, "title": "Deployment", "duration": "2 hours" }
+      ]
     }
   ],
   "students": [

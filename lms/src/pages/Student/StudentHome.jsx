@@ -1,15 +1,18 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
-import Dashboard from "../../Components/Dashboard";
+import { useParams, useLocation } from "react-router-dom";
+import TopNav from "../../Components/StudentComponents/TopNav";
 import LeftNav from "../../Components/StudentComponents/LeftNav";
 import HomeContent from "../../Components/StudentComponents/HomeContent";
-import TopNav from "../../Components/StudentComponents/TopNav";
-import {useParams  } from "react-router-dom";
 import CourseDescription from "../../Components/StudentComponents/CourseDescription";
+import CoursesEnrolled from "../../Components/StudentComponents/CoursesEnrolled";
+import CourseContent from "../../Components/StudentComponents/CourseContent";
 
 const StudentHome = () => {
-
   const { id } = useParams();
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <Box>
       {/* Nav for small Screens */}
@@ -29,15 +32,18 @@ const StudentHome = () => {
 
         {/* for main content */}
         <GridItem colSpan={[5, 4]} bg="gray.200" overflowY={"auto"}>
-        {(() => {
-            switch (id ? "/student/course/:id" : "") {
-              case "/student/course/:id":
+          {(() => {
+            switch (currentPath) {
+              case `/student/course/${id}`:
                 return <CourseDescription courseId={id} />;
+              case "/student/courses/enrolled":
+                return <CoursesEnrolled />;
+              case `/student/coursecontent/${id}`:
+                return <CourseContent courseId={id}/>
               default:
                 return <HomeContent />;
             }
           })()}
-          {/* <HomeContent /> */}
         </GridItem>
       </Grid>
     </Box>
