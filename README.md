@@ -22,7 +22,11 @@ This project is a Student LMS (Learning Management System) developed using React
 - **Chakra UI**: A simple, modular and accessible component library for React.
 - **JSON Server**: A full fake REST API for rapid prototyping and development.
 
-- ![Galaxy-Fold2-localhost](https://github.com/anasrashid-1/LMS-Dash/assets/125889610/9d15495e-7244-4fd0-b389-7badaefba8fc) ![Galaxy-Fold2-localhost (1)](https://github.com/anasrashid-1/LMS-Dash/assets/125889610/77e238b9-93ed-4538-8bde-e98478925cb0) ![Galaxy-Fold2-localhost (2)](https://github.com/anasrashid-1/LMS-Dash/assets/125889610/fea43ea2-1fd0-4aa5-a599-9f3d5e711ca2)
+<div style="display:flex;">
+  <img src="https://github.com/anasrashid-1/LMS-Dash/assets/125889610/9d15495e-7244-4fd0-b389-7badaefba8fc" alt="Galaxy-Fold2-localhost" width="200"/>
+  <img src="https://github.com/anasrashid-1/LMS-Dash/assets/125889610/77e238b9-93ed-4538-8bde-e98478925cb0" alt="Galaxy-Fold2-localhost (1)" width="200"/>
+  <img src="https://github.com/anasrashid-1/LMS-Dash/assets/125889610/fea43ea2-1fd0-4aa5-a599-9f3d5e711ca2" alt="Galaxy-Fold2-localhost (2)" width="200"/>
+</div>
 
 ## Installation
 
@@ -30,6 +34,3 @@ This project is a Student LMS (Learning Management System) developed using React
 
 ```bash
 git clone https://github.com/anasrashid-1/LMS-Dash
-
-
-
