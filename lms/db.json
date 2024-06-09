@@ -9,9 +9,21 @@
       "teacherName": "Dr. John Doe",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "Introduction to Programming", "duration": "1 hour" },
-        { "id": 2, "title": "Understanding Algorithms", "duration": "2 hours" },
-        { "id": 3, "title": "Data Structures Overview", "duration": "1.5 hours" }
+        {
+          "id": 1,
+          "title": "Introduction to Programming",
+          "duration": "1 hour"
+        },
+        {
+          "id": 2,
+          "title": "Understanding Algorithms",
+          "duration": "2 hours"
+        },
+        {
+          "id": 3,
+          "title": "Data Structures Overview",
+          "duration": "1.5 hours"
+        }
       ]
     },
     {
@@ -23,9 +35,21 @@
       "teacherName": "Dr. Jane Smith",
       "type": "Live",
       "lessons": [
-        { "id": 1, "title": "Agile Methodology", "duration": "2.5 hours" },
-        { "id": 2, "title": "Software Architecture Patterns", "duration": "3 hours" },
-        { "id": 3, "title": "Continuous Integration and Deployment", "duration": "2 hours" }
+        {
+          "id": 1,
+          "title": "Agile Methodology",
+          "duration": "2.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Software Architecture Patterns",
+          "duration": "3 hours"
+        },
+        {
+          "id": 3,
+          "title": "Continuous Integration and Deployment",
+          "duration": "2 hours"
+        }
       ]
     },
     {
@@ -37,9 +61,21 @@
       "teacherName": "Dr. John Doe",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "Linked Lists", "duration": "2 hours" },
-        { "id": 2, "title": "Trees and Graphs", "duration": "3 hours" },
-        { "id": 3, "title": "Sorting and Searching Algorithms", "duration": "2.5 hours" }
+        {
+          "id": 1,
+          "title": "Linked Lists",
+          "duration": "2 hours"
+        },
+        {
+          "id": 2,
+          "title": "Trees and Graphs",
+          "duration": "3 hours"
+        },
+        {
+          "id": 3,
+          "title": "Sorting and Searching Algorithms",
+          "duration": "2.5 hours"
+        }
       ]
     },
     {
@@ -51,9 +87,21 @@
       "teacherName": "Dr. Jane Smith",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "Introduction to Databases", "duration": "1.5 hours" },
-        { "id": 2, "title": "Relational Database Management Systems", "duration": "2 hours" },
-        { "id": 3, "title": "Database Design Principles", "duration": "2.5 hours" }
+        {
+          "id": 1,
+          "title": "Introduction to Databases",
+          "duration": "1.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Relational Database Management Systems",
+          "duration": "2 hours"
+        },
+        {
+          "id": 3,
+          "title": "Database Design Principles",
+          "duration": "2.5 hours"
+        }
       ]
     },
     {
@@ -65,9 +113,21 @@
       "teacherName": "Dr. John Doe",
       "type": "Live",
       "lessons": [
-        { "id": 1, "title": "Introduction to HTML", "duration": "1.5 hours" },
-        { "id": 2, "title": "Styling with CSS", "duration": "2 hours" },
-        { "id": 3, "title": "JavaScript Fundamentals", "duration": "2.5 hours" }
+        {
+          "id": 1,
+          "title": "Introduction to HTML",
+          "duration": "1.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Styling with CSS",
+          "duration": "2 hours"
+        },
+        {
+          "id": 3,
+          "title": "JavaScript Fundamentals",
+          "duration": "2.5 hours"
+        }
       ]
     },
     {
@@ -79,9 +139,21 @@
       "teacherName": "Dr. Jane Smith",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "Understanding Classes and Objects", "duration": "2 hours" },
-        { "id": 2, "title": "Inheritance and Polymorphism", "duration": "3 hours" },
-        { "id": 3, "title": "Design Patterns Overview", "duration": "2 hours" }
+        {
+          "id": 1,
+          "title": "Understanding Classes and Objects",
+          "duration": "2 hours"
+        },
+        {
+          "id": 2,
+          "title": "Inheritance and Polymorphism",
+          "duration": "3 hours"
+        },
+        {
+          "id": 3,
+          "title": "Design Patterns Overview",
+          "duration": "2 hours"
+        }
       ]
     },
     {
@@ -93,9 +165,21 @@
       "teacherName": "Dr. John Doe",
       "type": "Live",
       "lessons": [
-        { "id": 1, "title": "Software Testing Fundamentals", "duration": "1.5 hours" },
-        { "id": 2, "title": "Test Planning and Execution", "duration": "2.5 hours" },
-        { "id": 3, "title": "Test Automation", "duration": "2 hours" }
+        {
+          "id": 1,
+          "title": "Software Testing Fundamentals",
+          "duration": "1.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Test Planning and Execution",
+          "duration": "2.5 hours"
+        },
+        {
+          "id": 3,
+          "title": "Test Automation",
+          "duration": "2 hours"
+        }
       ]
     },
     {
@@ -107,9 +191,21 @@
       "teacherName": "Dr. Jane Smith",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "App Development Fundamentals", "duration": "1.5 hours" },
-        { "id": 2, "title": "Planning and Execution", "duration": "2.5 hours" },
-        { "id": 3, "title": "Deployment", "duration": "2 hours" }
+        {
+          "id": 1,
+          "title": "App Development Fundamentals",
+          "duration": "1.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Planning and Execution",
+          "duration": "2.5 hours"
+        },
+        {
+          "id": 3,
+          "title": "Deployment",
+          "duration": "2 hours"
+        }
       ]
     },
     {
@@ -121,9 +217,21 @@
       "teacherName": "Dr. John Doe",
       "type": "Upcoming",
       "lessons": [
-        { "id": 1, "title": "App Development Fundamentals", "duration": "1.5 hours" },
-        { "id": 2, "title": "Planning and Execution", "duration": "2.5 hours" },
-        { "id": 3, "title": "Deployment", "duration": "2 hours" }
+        {
+          "id": 1,
+          "title": "App Development Fundamentals",
+          "duration": "1.5 hours"
+        },
+        {
+          "id": 2,
+          "title": "Planning and Execution",
+          "duration": "2.5 hours"
+        },
+        {
+          "id": 3,
+          "title": "Deployment",
+          "duration": "2 hours"
+        }
       ]
     }
   ],
@@ -133,14 +241,19 @@
       "name": "Alice Smith",
       "age": 21,
       "email": "alice.smith@example.com",
-      "coursesEnrolled": [1]
+      "coursesEnrolled": [
+        1
+      ]
     },
     {
       "id": 2,
       "name": "Bob Johnson",
       "age": 22,
       "email": "bob.johnson@example.com",
-      "coursesEnrolled": [1, 2]
+      "coursesEnrolled": [
+        1,
+        2
+      ]
     }
   ],
   "teachers": [
