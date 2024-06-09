@@ -24,7 +24,7 @@ import LeftNav from './LeftNav';
           </Text>
   
           {/* Avatar */}
-          <Avatar src="https://bit.ly/dan-abramov" />
+          <Avatar src="https://bit.ly/sage-adebayo" />
         </Flex>
   
         {/* Drawer Component */}
