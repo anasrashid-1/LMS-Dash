@@ -42,7 +42,7 @@ const CourseDescription = ({ courseId }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/courses?id=${courseId}`)
+      .get(`https://lms-json-restapi.onrender.com/courses?id=${courseId}`)
       .then((response) => {
         setCourseData(response.data[0]);
       })

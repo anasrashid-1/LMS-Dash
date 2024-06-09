@@ -39,7 +39,7 @@ const Courses = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/courses")
+      .get("https://lms-json-restapi.onrender.com/courses")
       .then((response) => {
         setCourses(response.data);
       })
@@ -68,7 +68,7 @@ const Courses = () => {
   };
 
   const handleSubmit = () => {
-    axios.post("http://localhost:3000/courses", newCourse)
+    axios.post("https://lms-json-restapi.onrender.com/courses", newCourse)
       .then((response) => {
         setCourses([...courses, response.data]);
         onClose();
@@ -93,7 +93,7 @@ const Courses = () => {
   };
 
   const deleteCourse = (courseId) => {
-    axios.delete(`http://localhost:3000/courses/${courseId}`)
+    axios.delete(`https://lms-json-restapi.onrender.com/courses/${courseId}`)
       .then(() => {
         setCourses(courses.filter(course => course.id !== courseId));
         toast({

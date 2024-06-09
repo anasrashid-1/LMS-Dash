@@ -27,7 +27,7 @@ const HomeContent = () => {
     };
 
     useEffect(() => {
-        axios.get('http://localhost:3000/courses')
+        axios.get('https://lms-json-restapi.onrender.com/courses')
             .then(response => {
                 setCourses(response.data);
                 setUpcomingCoursesCount(response.data.filter(course => course.type === 'Upcoming').length);
