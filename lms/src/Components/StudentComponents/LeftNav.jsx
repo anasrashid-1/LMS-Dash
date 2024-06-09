@@ -66,7 +66,7 @@ import {
             </HStack>
           </Link>
   
-          <Link as={RouterLink} to="/assignments/" _hover={{ textDecoration: "none", color: "teal" }}>
+          <Link as={RouterLink} to="/student/home" _hover={{ textDecoration: "none", color: "teal" }}>
             <HStack spacing={'4'} alignItems={"center"}>
               <Icon as={FaTasks} boxSize={6} />
               <Text>My Assignments</Text>
@@ -75,7 +75,7 @@ import {
   
           
   
-          <Link href="#" _hover={{ textDecoration: "none", color: "teal" }}>
+          <Link as={RouterLink} to="/student/home" _hover={{ textDecoration: "none", color: "teal" }}>
             <HStack spacing={'4'} alignItems={"center"}>
               <Icon as={FaPhone} boxSize={6} />
               <Text>Contact Us</Text>
