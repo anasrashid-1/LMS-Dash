@@ -20,7 +20,7 @@ import {
   Textarea,
   Icon,
   useToast,
-  Select // Import Select component
+  Select
 } from "@chakra-ui/react";
 import { FaEdit, FaPlus } from "react-icons/fa";
 
@@ -33,7 +33,7 @@ const Courses = () => {
     img: "",
     description: "",
     teacherName: "",
-    type: "",
+    type: "Live",
     lessons: [{ id: 1, title: "", duration: "" }],
   });
 
@@ -50,27 +50,45 @@ const Courses = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setNewCourse({ ...newCourse, [name]: value });
+    setNewCourse((prevCourse) => ({
+      ...prevCourse,
+      [name]: value,
+    }));
+  };
+
+  const handleSelectChange = (e) => {
+    const { name, value } = e.target;
+    setNewCourse((prevCourse) => ({
+      ...prevCourse,
+      [name]: value,
+    }));
   };
 
   const handleLessonChange = (index, e) => {
     const { name, value } = e.target;
     const updatedLessons = [...newCourse.lessons];
     updatedLessons[index][name] = value;
-    setNewCourse({ ...newCourse, lessons: updatedLessons });
+    setNewCourse((prevCourse) => ({
+      ...prevCourse,
+      lessons: updatedLessons,
+    }));
   };
 
   const addLessonField = () => {
-    setNewCourse({
-      ...newCourse,
-      lessons: [...newCourse.lessons, { id: newCourse.lessons.length + 1, title: "", duration: "" }]
-    });
+    setNewCourse((prevCourse) => ({
+      ...prevCourse,
+      lessons: [
+        ...prevCourse.lessons,
+        { id: prevCourse.lessons.length + 1, title: "", duration: "" },
+      ],
+    }));
   };
 
   const handleSubmit = () => {
-    axios.post("https://lms-json-restapi.onrender.com/courses", newCourse)
+    axios
+      .post("https://lms-json-restapi.onrender.com/courses", newCourse)
       .then((response) => {
-        setCourses([...courses, response.data]);
+        setCourses((prevCourses) => [...prevCourses, response.data]);
         onClose();
         toast({
           title: "Course added.",
@@ -93,9 +111,12 @@ const Courses = () => {
   };
 
   const deleteCourse = (courseId) => {
-    axios.delete(`https://lms-json-restapi.onrender.com/courses/${courseId}`)
+    axios
+      .delete(`http://localhost:3000/courses/${courseId}`)
       .then(() => {
-        setCourses(courses.filter(course => course.id !== courseId));
+        setCourses((prevCourses) =>
+          prevCourses.filter((course) => course.id !== courseId)
+        );
         toast({
           title: "Course deleted.",
           description: "The course has been deleted successfully.",
@@ -122,10 +143,10 @@ const Courses = () => {
         <Box
           minWidth="300px"
           maxWidth={"350px"}
-          bg={'gray.300'}
+          bg={"gray.300"}
           borderRadius="12px"
           p="20px"
-          m='10px'
+          m="10px"
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -135,7 +156,9 @@ const Courses = () => {
           _hover={{ bg: "gray.400" }}
         >
           <Icon as={FaPlus} boxSize="40px" color="teal.500" />
-          <Text mt="10px" fontSize="xl" color="teal.500">Add Course</Text>
+          <Text mt="10px" fontSize="xl" color="teal.500">
+            Add Course
+          </Text>
         </Box>
         {courses.map((course) => (
           <Box
@@ -160,16 +183,26 @@ const Courses = () => {
               <Text fontSize="sm" color="gray.600" mb="10px">
                 Instructor: {course.teacherName}
               </Text>
-              <Flex flexDir={'row'} gap={'2'} mt={'auto'}>
-                <Button colorScheme="orange" mt="auto" w={'20%'}> <FaEdit /> </Button>
-                <Button colorScheme="red" mt="auto" w={'100%'} onClick={() => deleteCourse(course.id)}>Delete</Button>
+              <Flex flexDir={"row"} gap={"2"} mt={"auto"}>
+                <Button colorScheme="orange" mt="auto" w={"20%"}>
+                  {" "}
+                  <FaEdit />{" "}
+                </Button>
+                <Button
+                  colorScheme="red"
+                  mt="auto"
+                  w={"100%"}
+                  onClick={() => deleteCourse(course.id)}
+                >
+                  Delete
+                </Button>
               </Flex>
             </Flex>
           </Box>
         ))}
       </Flex>
 
-      <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside" size={'xl'}>
+      <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside" size={"xl"}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Add New Course</ModalHeader>
@@ -193,7 +226,7 @@ const Courses = () => {
             </FormControl>
             <FormControl mb="4" isRequired>
               <FormLabel>Type</FormLabel>
-              <Select name="type" value={newCourse.type} onChange={handleInputChange}>
+              <Select name="type" value={newCourse.type} onChange={handleSelectChange}>
                 <option value="Live">Live</option>
                 <option value="Upcoming">Upcoming</option>
               </Select>
@@ -226,7 +259,9 @@ const Courses = () => {
             <Button colorScheme="blue" mr={3} onClick={handleSubmit}>
               Save
             </Button>
-            <Button variant="ghost" onClick={onClose}>Cancel</Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
