@@ -112,7 +112,7 @@ const Courses = () => {
 
   const deleteCourse = (courseId) => {
     axios
-      .delete(`http://localhost:3000/courses/${courseId}`)
+      .delete(https://lms-json-restapi.onrender.com/courses/${courseId}`)
       .then(() => {
         setCourses((prevCourses) =>
           prevCourses.filter((course) => course.id !== courseId)
